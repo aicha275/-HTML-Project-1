@@ -1,78 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALKAWTHER: HOME </title>
-<link rel="shortcut icon" href="back.jpeg" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALKAWTHER | Luxury Perfume</title>
+<link rel="shortcut icon" href="aa.png">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color:#faf6f4;
+    color:#333;
+}
+
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:30px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d88c9a;
+}
+
+.hero{
+    height:90vh;
+    background:url("bg1.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:55px;
+    letter-spacing:3px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.hero button{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    background:#d88c9a;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:25px;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:#c76d80;
+}
+
+
+.about{
+    padding:80px 10%;
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.about img{
+    width:350px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-text h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.7;
+    font-size:16px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+footer img{
+    width:40px;
+    margin-top:10px;
+}
+
+@media(max-width:900px){
+    .about{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav a{
+        margin:0 10px;
+    }
+}
+
+</style>
 </head>
-<body width="100%" background="bg1.jpg">
-    <table width="100%" cellspacing="0">
-    <tr bgcolor=#FCC6BB>
-      <td>
-    <br>
-         <h1> AL KAWTHER  </h1>
-         <img src="" width="150">
- 
 
-          <br>
- 
+<body>
 
-       </td>
-       <td width="40%"></td>
-       <td> <a href="./index.html" target="_blank"><font color="black">HOME</font></a>&nbsp;&nbsp;
-      <a href="./nos produits.html" target="_blank"><font color="black"> OWER PRODUCTS</font></a>&nbsp;&nbsp;
-     <a href="./sign up.html" target="_blank"><font color="black"> SIGN UP</font></a> </td>&nbsp;&nbsp;
+<header>
+<div style="display:flex; align-items:center; gap:15px;">
+    <img src="aa.png" alt="Logo" width="80">
+    <h1>AL KAWTHER</h1>
+</div>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./nos produits.html">Our Products</a>
+        <a href="./sign up.html">Sign Up</a>
+    </nav>
+</header>
 
-</tr></table>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Luxury in Every Drop</h1>
+        <p>Discover timeless elegance with our exclusive fragrances</p>
+        <button>Explore Collection</button>
+    </div>
+</section>
 
+<section class="about">
+    <img src="wswsw.jpg" alt="Perfume">
+    <div class="about-text">
+        <h2>About the Brand</h2>
+        <p>
+            Alkawther is a luxury perfume brand that embodies elegance and sophistication.
+            Each fragrance is crafted with precision and passion to create unforgettable
+            sensory experiences. Our perfumes are designed to express personality,
+            confidence, and timeless beauty.
+        </p>
+    </div>
+</section>
 
-    
+<footer>
+    <p>Follow us</p>
+    <img src="https://i.pinimg.com/736x/c4/e9/60/c4e960c36bde3a034e4b5fc2ca848d7c.jpg" alt="social">
+    <p>© 2026 All Rights Reserved</p>
+</footer>
 
-
-<hr>
-<table>
-<section>
-    
-    <h2>About the Brand</h2>
-<tr><td>
-    <img src="wswsw.jpg" width="150">
-</td>
-    <td>
-<p> <b>Alkawther is a luxury perfume brand that embodies elegance and sophistication.<br> 
-With a commitment to quality and craftsmanship, Alkawther offers a range of exquisite fragrances that captivate the senses.
-<br> Each scent is carefully curated to evoke emotions and create lasting memories.<br> 
-Experience the allure of Alkawther and indulge in the art of perfumery.</b></p>
-    </td>
-</tr>
-   
-</section></table>
-
-<hr>
-   <footer>
-    <tr>
-            <td bgcolor="#FFFFFF">
-                <table width="100%" >
-                    <tr>
-                        <td >
-                            <center>
-                                <hr width="90%" color="#F9F1F0">
-                                
-                                Follow us : <br>
-                                <img src="https://i.pinimg.com/736x/c4/e9/60/c4e960c36bde3a034e4b5fc2ca848d7c.jpg" alt="insta" width="70"> <br>
-                                Facebook / Instagram
-                            
-                                <br><br>
-                                &#169; 2026 All Rights Reserved.
-                            
-                                <br><br>
-                            </center>
-                        </td>
-
-                    </tr>
-                </table>
-  
-    
-</footer> 
 </body>
 </html>
